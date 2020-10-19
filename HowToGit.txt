@@ -1,0 +1,51 @@
+1.>git init
+   The git init command adds a local git repository the the project
+
+2. Staging
+   >git add demo.txt HowToGit.txt
+   Put the code in the staging area first. The staging area is there to keep track of all the files
+   which are to be commited.
+
+   Any file which is not added to the staging area will not be commited. This gives the developer control
+   over which files need to be commited.
+   >git add .  (to staging all files)
+
+3. Commiting:
+   >git commit -m "text for this commit..."   
+
+4. Change in demo.txt.
+   >git status    to view change
+   Status show that demo.txt is modified and is not yet in the staging area.
+   Now let us add demo.txt to the staging area and commit it using the following commands:
+   >git add demo.txt
+   >git commit -m "demo.txt file is modified."   
+
+5. Log
+   >git log
+   Use git log to print out all the commits which have been done up until now.   
+
+Branch-----------------------------------------------------------------------------------------------
+1. Create new Branch
+   >git branch test
+    
+2. Switch to new branch
+   >git checkout test
+
+3. List all branches
+   >git branch
+
+Modified the codes...
+
+4. Add changing to branch
+   >git add demo.txt HowToGit.txt
+   >git commit -m "Add text to Test branch"
+
+5. Merging
+   Currently, Test branch is ahead of the Master by 1 commit. Let's say that now we want all the code in the
+   test branch to be bought back to the Master branch. This is where git merge is very useful.
+
+   In order to merge the code from the test branch into the master branch, follow these steps:
+   1. First go back to the master branch:
+      >git checkout master
+   2. Then run the merge command:
+      >git merge test

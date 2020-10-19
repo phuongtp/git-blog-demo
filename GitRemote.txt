@@ -1,0 +1,76 @@
+
+https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/
+
+The Remote Git Repository
+Until now, we have been working only in the local repository. Each developer will work in their local repository but eventually,
+they will push the code into a remote repository. Once the code is in the remote repository, other developers can see and modify that code.
+
+GitHub
+
+Here we will be using GitHub for the remote repository.
+Go to https://github.com/ and create an account.
+After registering in the GitHub homepage, click on Start a Project to create a new Git repository. Give the repository a name and click “Create Repository”
+
+-------------------------------------------------------------------------------------------------------------------------
+Give the name as git-blog-demo.
+
+1. Connect local to the Remote repository:
+   In order to point your local repository to the remote repository, use the following command:
+   >git remote add origin [repository url]
+   >git remote add origin https://github.com/phuongtp/git-blog-demo.git
+
+2. Push all code from local to remote repository:
+   >git push -u origin master
+
+3. Git Pull
+   Additional Commands, is used to pull the latest canhges from the remote repository into the local repository.  
+   The remote repository code is updated continuously by various developers, hence git pull is necessary:
+   >git pull origin master
+
+4. Git Clone
+   git clone is used to clone an existing remote repository into your computer. The command for this is:
+   >git clone https://github.com/phuongtp/git-blog-demo.git
+
+ 
+
+ 
+
+ 
+
+ 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+https://github.com/phuongtp/git-blog-demo.git
+
+ 
+
+…or create a new repository on the command line
+
+echo "# git-blog-demo" >> README.md
+
+git init
+
+git add README.md
+
+git commit -m "first commit"
+
+git branch -M main
+
+git remote add origin https://github.com/phuongtp/git-blog-demo.git
+
+git push -u origin main
+
+ 
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/phuongtp/git-blog-demo.git
+
+git branch -M main
+
+git push -u origin main
+
+ 
+
+Or import from DEV OPS
